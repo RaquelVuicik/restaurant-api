@@ -1,0 +1,49 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Nome da sua API",
+        "description": "Descrição da sua API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/dish": {
+            "get": {
+                "tags": [
+                    "Dishes"
+                ],
+                "summary": "Retorn a dish",
+                "operationId": "6f7b432b54a7c60ab61be845bf0cb561",
+                "responses": {
+                    "200": {
+                        "description": "Dishes returned with success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id": {
+                                            "type": "integer"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "price": {
+                                            "type": "number",
+                                            "format": "float"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Dishes",
+            "description": "Dishes"
+        }
+    ]
+}
